@@ -1,0 +1,29 @@
+/* Cooking icons to check out: https://www.behance.net/gallery/25418707/160-Cooking-Icons */
+
+.navbar-recipes{
+
+}
+
+.no-show{
+    display: none;
+}
+
+/* Remove bullet points in ul */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make vertical navigation bar */
+li a {
+    display: block;
+    width: 10%;
+    text-decoration: none;
+    color:#CA7D64;
+}
+
+a:visited {
+    text-decoration: none;
+    color:#CA7D64;
+}
