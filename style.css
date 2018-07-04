@@ -18,7 +18,7 @@ ul {
 /* Make vertical navigation bar */
 li a {
     display: block;
-    width: 10%;
+    /*width: 20%;*/
     text-decoration: none;
     color:#CA7D64;
 }
