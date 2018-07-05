@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Cook Book</title>
+        <title>Less Than 30 Cookbook</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
@@ -17,29 +17,47 @@
     </head>
 
     <body>
-        
-        <div class="navbar navbar-expand-lg">
-            <div class="home">
+        <div class="row">
+            <!-- Vertical navbar -->
+            <div class="col-2">
+                <div class="navbar navbar-expand-lg">
+                    <!-- If user clicks on home, user will be brought back to homepage -->
+                    <div class="home">
+                    </div>
+                    <!-- Default navbar, shown when user is first on site -->
+                    <ul class="navbar-default">
+                        <li><a href="#" id="navbar-about-site">About Less Than 30</a></li>
+                        <li><a href="#">About Creator</a></li>
+                        <li><a href="#" id="navbar-simple-recipes">Simple Recipes</a></li>
+                        <li><a href="#">Suggestions</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- Navbar shown when user clicks on simple recipes -->
+                    <ul class="navbar-recipes no-show">
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Any Meal</a></li>
+                        <li><a href="#" class="to-default-navbar" id="recipes-to-home">Back</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="navbar-default">
-                <li><a href="#">About the Creator</a></li>
-                <li><a href="#" id="simple-recipes">Simple Recipes</a></li>
-                <li><a href="#">Suggestions</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="navbar-recipes no-show">
-                <li><a href="#">Breakfast</a></li>
-                <li><a href="#">Lunch</a></li>
-                <li><a href="#">Dinner</a></li>
-                <li><a href="#">Any</a></li>
-                <li><a href="#" class="to-default-navbar" id="recipes-to-home">Back</a></li>
-            </ul>
-        </div>
 
-        <div class="about-simple-recipes"></div>
-        <div class="recipes"></div>
-        <div class="about-creator"></div>
-        
+            <div class="col-9">
+                <div class="content no-show" id="about-site">
+                    <p>Why create this site?  This site is for simple and easy to make recipes for a single person.  The time needed to prepare and cook is less than an hour, and more often than not, less than 30 minutes!</p>
+                </div>
+
+                <div class="recipes content no-show">
+                    <p>Egg drop soup; macaroni soup; tortilla with cheese or avocado and egg; scrambled egg; hardboiled egg</p>
+                </div>
+
+                <div class="about-creator content no-show">
+                    <p>Hi, I'm Tiffany Ho, and I'm the creator of Less Than 30 Cookbook.</p>
+                </div>
+                <div class="contact-info content no-show">Github, E-mail, LinkedIn</div>
+            </div>
+        </div>
 
         <!-- tell which JS file to reference & allow use of jQuery -->
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
