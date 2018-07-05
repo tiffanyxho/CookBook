@@ -11,6 +11,18 @@ function handler() {
 }
 */
 
+// Navbar's home button clicked --> go back to "home pg"
+document.getElementById("home-btn").addEventListener("click", function goHomePg(){
+    let content = document.getElementsByClassName("content");
+    
+        for (let i=0; i<content.length; i++){
+            content[i].style.display = "none";
+        }
+
+        document.getElementById("home-img1").style.display = "initial";
+        document.getElementById("home-img2").style.display = "initial";
+});
+
 // Navbar's Simple Recipe clicked --> shows simple recipe options
 document.getElementById("navbar-simple-recipes").addEventListener("click", function e(){
     document.getElementsByClassName("navbar-default")[0].style.display = "none";
@@ -30,6 +42,14 @@ document.getElementById("navbar-about-site").addEventListener("click", function 
     for (let i=0; i<content.length; i++){
         content[i].style.display = "none";
     }
-    document.getElementById("about-site").style.display = "initial";
+    document.getElementById("about-site-text").style.display = "initial";
 });
 
+document.getElementById("navbar-about-creator").addEventListener("click", function display(){
+    let content = document.getElementsByClassName("content");
+
+    for (let i=0; i<content.length; i++){
+        content[i].style.display = "none";
+    }
+    document.getElementById("about-creator-text").style.display = "initial";
+});

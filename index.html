@@ -21,13 +21,14 @@
             <!-- Vertical navbar -->
             <div class="col-2">
                 <div class="navbar navbar-expand-lg">
-                    <!-- If user clicks on home, user will be brought back to homepage -->
-                    <div class="home">
-                    </div>
                     <!-- Default navbar, shown when user is first on site -->
                     <ul class="navbar-default">
+                        <!-- If user clicks on home, user will be brought back to homepage -->
+                        <div class="home">
+                            <button id="home-btn">Home Btn</button>
+                        </div>
                         <li><a href="#" id="navbar-about-site">About Less Than 30</a></li>
-                        <li><a href="#">About Creator</a></li>
+                        <li><a href="#" id="navbar-about-creator">About Creator</a></li>
                         <li><a href="#" id="navbar-simple-recipes">Simple Recipes</a></li>
                         <li><a href="#">Suggestions</a></li>
                         <li><a href="#">Contact</a></li>
@@ -44,7 +45,11 @@
             </div>
 
             <div class="col-9">
-                <div class="content no-show" id="about-site">
+                <div>
+                    <img class="content" id="home-img1" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/36745643_1760938740638800_4879636160302809088_n.jpg?_nc_cat=0&oh=8282bf44ab0d982016283480a7d13fe8&oe=5BA3A172">
+                    <img class="content" id="home-img2" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/36733986_1760947867304554_4067758801577574400_n.jpg?_nc_cat=0&oh=ec777f55c7e93827448bf2da12f63cb0&oe=5B9F173E">
+                </div>
+                <div class="content no-show" id="about-site-text">
                     <p>Why create this site?  This site is for simple and easy to make recipes for a single person.  The time needed to prepare and cook is less than an hour, and more often than not, less than 30 minutes!</p>
                 </div>
 
@@ -52,10 +57,12 @@
                     <p>Egg drop soup; macaroni soup; tortilla with cheese or avocado and egg; scrambled egg; hardboiled egg</p>
                 </div>
 
-                <div class="about-creator content no-show">
+                <div class="about-creator content no-show" id="about-creator-text">
                     <p>Hi, I'm Tiffany Ho, and I'm the creator of Less Than 30 Cookbook.</p>
                 </div>
-                <div class="contact-info content no-show">Github, E-mail, LinkedIn</div>
+                <div class="contact-info content no-show">
+                    Github, E-mail, LinkedIn
+                </div>
             </div>
         </div>
 
