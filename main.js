@@ -18,9 +18,8 @@ document.getElementById("home-btn").addEventListener("click", function goHomePg(
         for (let i=0; i<content.length; i++){
             content[i].style.display = "none";
         }
-
-        document.getElementById("home-img1").style.display = "initial";
-        document.getElementById("home-img2").style.display = "initial";
+        
+        document.getElementsByClassName("home-imgs")[0].style.display = "block";
 });
 
 // Navbar's Simple Recipe clicked --> shows simple recipe options

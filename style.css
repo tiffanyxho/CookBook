@@ -1,11 +1,17 @@
 /* Cooking icons to check out: https://www.behance.net/gallery/25418707/160-Cooking-Icons */
 
-.navbar-recipes{
-
-}
-
+/* Used for elements that I do not want displayed on home page */
 .no-show{
     display: none;
+}
+
+.home-imgs{
+    width: 100%;
+    height: 70vh;
+    border: 4px red solid;
+    background: url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/36733986_1760947867304554_4067758801577574400_n.jpg?_nc_cat=0&oh=ec777f55c7e93827448bf2da12f63cb0&oe=5B9F173E") 0 0;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
 }
 
 /* Remove bullet points in ul */
