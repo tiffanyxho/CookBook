@@ -1,8 +1,13 @@
 /* Cooking icons to check out: https://www.behance.net/gallery/25418707/160-Cooking-Icons */
 
-/* Used for elements that I do not want displayed on home page */
-.no-show{
-    display: none;
+#first-row{
+    margin-top: 5%;
+}
+
+#second-row{
+    margin-top: 5%;
+    /*position: fixed;
+    bottom: 0;*/
 }
 
 .home-imgs{
@@ -16,6 +21,16 @@
 /* Set width of dumpling img on home page */
 .home-imgs p {
     width: 39%;
+}
+
+#github-img{
+    width: 20%;
+    height: 100%;
+}
+
+/* Used for elements that I do not want displayed on home page */
+.no-show{
+    display: none;
 }
 
 /* Makes horizontal scroll bar go away :) */
