@@ -8,11 +8,23 @@
 .home-imgs{
     width: 100%;
     height: 70vh;
-    border: 4px red solid;
     background: url("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/36733986_1760947867304554_4067758801577574400_n.jpg?_nc_cat=0&oh=ec777f55c7e93827448bf2da12f63cb0&oe=5B9F173E") 0 0;
     background-repeat: no-repeat;
-    background-position: 50% 45%;
+    background-position: 75% 45%;
 }
+
+/* Set width of dumpling img on home page */
+.home-imgs p {
+    width: 39%;
+}
+
+/* Makes horizontal scroll bar go away :) */
+.row{
+    border: 2px red solid;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 /* Remove bullet points in ul */
 ul {
