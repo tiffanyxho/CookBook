@@ -40,7 +40,7 @@
                         <li><a href="#">Breakfast</a></li>
                         <li><a href="#">Lunch</a></li>
                         <li><a href="#">Dinner</a></li>
-                        <li><a href="#">Any Meal</a></li>
+                        <li><a href="#">Snacks, Drinks, &amp; Soups</a></li>
                         <li><a href="#" class="to-default-navbar" id="recipes-to-home">Back</a></li>
                     </ul>
                 </div>
@@ -59,14 +59,28 @@
                 <div class="content no-show" id="about-site-text">
                     <p>Why create this site?  This site is for simple and easy to make recipes for a single person.  The time needed to prepare and cook is less than an hour, and more often than not, less than 30 minutes!</p>
                 </div>
-                <!-- Recipes portion -->
-                <div class="recipes content no-show">
-                    <p>Egg drop soup; macaroni soup; tortilla with cheese or avocado and egg; scrambled egg; hardboiled egg</p>
-                </div>
                 <!-- About creator portion -->
                 <div class="about-creator content no-show" id="about-creator-text">
                     <p>Hi, I'm Tiffany Ho, and I'm the creator of Less Than 30 Cookbook.</p>
                 </div>
+                <!-- Recipes portion -->
+                <div class="recipes content no-show">
+                    <div id="breakfast">
+                        
+                    </div>
+                    <div id="lunch">
+                        
+                    </div>
+                    <div id="dinner">
+                        
+                    </div>
+                    <div id="other-food">
+                        
+                    </div>
+                    <p>Egg drop soup; macaroni soup; tortilla with cheese or avocado and egg; scrambled egg; hardboiled egg</p>
+                    <p>Smoothies: strawberry-banana, avocado, strawberry-blueberry-banana</p>
+                    <p></p>
+                </div>                
                 <!-- Contact info. -->
                 <div class="contact-info content no-show">
                     Github, E-mail, LinkedIn
@@ -77,26 +91,8 @@
             </div>
         </div>
 
+        <!-- Contains contact info at bottom of page; Github, LinkedIn, & E-mail -->
         <div class="row" id="second-row">
-            <!--<div class="col-2"></div>
-            <div class="col-3">
-                <a href="https://github.com/tiffanyxho" target="_blank">
-                    <img id="linkedin-img" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=s180">
-                </a>
-            </div>-->
-            <!-- Github - get github img to slide and display github text when hovered over -->
-            <!--<div class="col-3">-->
-                <!-- Can click on github img & opens to my Github in a new tab/window -->
-            <!--    <a href="https://github.com/tiffanyxho" target="_blank">
-                        <img id="github-img" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
-                    </a>
-            </div>
-            <div class="col-3">
-                <a href="tiffanyxho@gmail.com" target="_blank">
-                    <img id="mail-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///9LnNPJ3u9EmdJbpdfk8Ph8td36/P2kyeZQntTQ5fNmq9lAl9E9ltHL4fHp8/r1+v12st1hp9icxeWPv+JxrtuGud+t0Oqhy+i21eze6/bQ5PPA2++v0uvh7vfX6PTLIR9MAAAFJUlEQVR4nO2c7ZaqIBSGIfzIpDQ17UPr/u/y4JkzFTt1jFCZs97n59hSH2HD3uDIGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPiFpLfVJe08clu5xNVUcFdk3Cs2rwfCKpPCGSTfn0IjwU0mOOcyrhJ6pBLtEXcQ0clEMAy+NAQPLvqR1C0/hYhvJoaPE3hHLRrr7XIufaxNDOXTCQ7PwdzI3gsthTAyfO6LQlaPZjy714afG3K+ja/3AStzLxAtGHKxPX4PqrW39AzxjVVDdZrD7l9Xrct94AL7yK6hmneO/tfB9Oo7QLLJLBsq9rVZ+jANfmzfUHjFS4qzHFdLhiRHyxrrd2qKJcOo2WsToErjuguO+bFleAtz0lW5Uab7GeG1aq5kELBlqOqn3YE4lsY1mRmhX26lFJXeeywasiT3tGgUWT1nV01O/O/lRaO1ok1DNcsHJBoLk4rFiPBW3m/Gfz5g15D5eaQ1o4xP8zRjUj0SYVk/H7FsyMKaDqrFZfAUdriUT09WalOVbUPVjGtOonE9dTOGuVbJTNuG7R8ve336j4Jpo3Fz0J+pN2Uc/uNIUpyomjBTLSJSpZ4mHEvv3NPd744T+91n+JidR9ZLPBL3ExkyRudG2UwRjclR76D8NemfzJBtAr33bIOzbcdwd9CXg8S+fvnRdIYsrfS1GsGPdrvqlY7aUd5RtU1oqAbVUg8RsV9ZHHFW+szLZUcDsmkNVZg0JBq9rqdsxHVNT73uTvSnNVTlTEAWTg+dD/rtC59oIRP07IBNbaiisabBUhpciJCQOVBEVe8oNrmhuh3ajN7Aj0dRe/oJZTZQic5g+HJHQhSfzBspeWJqjB76+SyGzC8j7aZkvDMdVNOdIB30MJz1zmPYjgx06jobXE89q4IkafFPq3ozGTJ2K/QRR8YGSxzJKSYPqvjxQc1mqJox1h6/isZ3i6pNScblMSsI8xl2NOPhrbcHaBbIxc8NyOY1ZOnqoDfjiE52h2byIlqN6uazGrYLjlwnHrtufNSTNL4tR+Z/MxuqipVU5Lwc0xI+TdK8zdgOPrshYyQahfhxMy6sSJ3L30gZFjBkdabf7jZIhxzD257MgW9l70sYvi7/R6f+oHpZnXyzAlvEsF03JnFV3nqacWSd288yhm3LkLE/e301rv0ZiUDp5e9uaC1lyNJLSXpq+br8vwrIHF++n7EvZtgmmZI0Y67f/ku4eo3BGsiChiz0SabK4+cuSHdc5aEvVgdZ0rBNNUkzRo9ilu6abwfr3H6WNVTXpw0Vf2WqtSRzvGe6SLe0IUvXZIkjalKWFnRpJzc9//KGjF0C0h+LmiyWR59sljtgqKKR7uLoxp/tlLtgqIbNkqbWD79P33Zww7BdgOl+bVp49Yf7AI4YMnYuugS35cfbVc4Yqmyc1sZc2njlyB1D1VX1OlBsrbzE6ZKhmuefBWM7L+K4ZciS7wU1NQda2ml0zJCxJubtC/bv1rn9OGfIznkQBLm9HX/3DFmYJDZfE3fQ0DIwHAaGLgDDYWDoAjAcBoYuAMNhYOgCMBwGhi4Aw2Fg6AIwHAaGLgDDYWDoAjAcBoYuAMNhYOgCMBwGhi7w/xva+l5bdVn6Q8E97E6eHUMv81yF2zH8BcAQhu7z/xuafQs6/j2KItsZGLJV5t5XrbsRPDf7jMMqiBz6fH4/svu//8bg75bOWsZh9F9hAAAAAAAAAAAAAAAAAAAAALzHH00wZfrSdJ4CAAAAAElFTkSuQmCC">
-                </a>
-            </div>
-            <div class="col-1"></div>-->
             <div class="col-12">
                 <div class="img-container">
                     <!-- TODO: make font size for contact me bigger & change font -->
@@ -107,9 +103,12 @@
                     <a href="https://www.linkedin.com/in/tiffany-h-950898141/" target="_blank">
                         <img id="linkedin-img" src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=s180">
                     </a>
-                    <a href="tiffanyxho@gmail.com" target="_blank">
-                        <img id="mail-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///9LnNPJ3u9EmdJbpdfk8Ph8td36/P2kyeZQntTQ5fNmq9lAl9E9ltHL4fHp8/r1+v12st1hp9icxeWPv+JxrtuGud+t0Oqhy+i21eze6/bQ5PPA2++v0uvh7vfX6PTLIR9MAAAFJUlEQVR4nO2c7ZaqIBSGIfzIpDQ17UPr/u/y4JkzFTt1jFCZs97n59hSH2HD3uDIGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPiFpLfVJe08clu5xNVUcFdk3Cs2rwfCKpPCGSTfn0IjwU0mOOcyrhJ6pBLtEXcQ0clEMAy+NAQPLvqR1C0/hYhvJoaPE3hHLRrr7XIufaxNDOXTCQ7PwdzI3gsthTAyfO6LQlaPZjy714afG3K+ja/3AStzLxAtGHKxPX4PqrW39AzxjVVDdZrD7l9Xrct94AL7yK6hmneO/tfB9Oo7QLLJLBsq9rVZ+jANfmzfUHjFS4qzHFdLhiRHyxrrd2qKJcOo2WsToErjuguO+bFleAtz0lW5Uab7GeG1aq5kELBlqOqn3YE4lsY1mRmhX26lFJXeeywasiT3tGgUWT1nV01O/O/lRaO1ok1DNcsHJBoLk4rFiPBW3m/Gfz5g15D5eaQ1o4xP8zRjUj0SYVk/H7FsyMKaDqrFZfAUdriUT09WalOVbUPVjGtOonE9dTOGuVbJTNuG7R8ve336j4Jpo3Fz0J+pN2Uc/uNIUpyomjBTLSJSpZ4mHEvv3NPd744T+91n+JidR9ZLPBL3ExkyRudG2UwRjclR76D8NemfzJBtAr33bIOzbcdwd9CXg8S+fvnRdIYsrfS1GsGPdrvqlY7aUd5RtU1oqAbVUg8RsV9ZHHFW+szLZUcDsmkNVZg0JBq9rqdsxHVNT73uTvSnNVTlTEAWTg+dD/rtC59oIRP07IBNbaiisabBUhpciJCQOVBEVe8oNrmhuh3ajN7Aj0dRe/oJZTZQic5g+HJHQhSfzBspeWJqjB76+SyGzC8j7aZkvDMdVNOdIB30MJz1zmPYjgx06jobXE89q4IkafFPq3ozGTJ2K/QRR8YGSxzJKSYPqvjxQc1mqJox1h6/isZ3i6pNScblMSsI8xl2NOPhrbcHaBbIxc8NyOY1ZOnqoDfjiE52h2byIlqN6uazGrYLjlwnHrtufNSTNL4tR+Z/MxuqipVU5Lwc0xI+TdK8zdgOPrshYyQahfhxMy6sSJ3L30gZFjBkdabf7jZIhxzD257MgW9l70sYvi7/R6f+oHpZnXyzAlvEsF03JnFV3nqacWSd288yhm3LkLE/e301rv0ZiUDp5e9uaC1lyNJLSXpq+br8vwrIHF++n7EvZtgmmZI0Y67f/ku4eo3BGsiChiz0SabK4+cuSHdc5aEvVgdZ0rBNNUkzRo9ilu6abwfr3H6WNVTXpw0Vf2WqtSRzvGe6SLe0IUvXZIkjalKWFnRpJzc9//KGjF0C0h+LmiyWR59sljtgqKKR7uLoxp/tlLtgqIbNkqbWD79P33Zww7BdgOl+bVp49Yf7AI4YMnYuugS35cfbVc4Yqmyc1sZc2njlyB1D1VX1OlBsrbzE6ZKhmuefBWM7L+K4ZciS7wU1NQda2ml0zJCxJubtC/bv1rn9OGfIznkQBLm9HX/3DFmYJDZfE3fQ0DIwHAaGLgDDYWDoAjAcBoYuAMNhYOgCMBwGhi4Aw2Fg6AIwHAaGLgDDYWDoAjAcBoYuAMNhYOgCMBwGhi7w/xva+l5bdVn6Q8E97E6eHUMv81yF2zH8BcAQhu7z/xuafQs6/j2KItsZGLJV5t5XrbsRPDf7jMMqiBz6fH4/svu//8bg75bOWsZh9F9hAAAAAAAAAAAAAAAAAAAAALzHH00wZfrSdJ4CAAAAAElFTkSuQmCC">
-                    </a>
+                    <!-- TODO: make mail redirect to email/mail application -->
+                    <address>
+                        <a href="mailto:tiffanyxho@gmail.com">
+                            <img id="mail-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///9LnNPJ3u9EmdJbpdfk8Ph8td36/P2kyeZQntTQ5fNmq9lAl9E9ltHL4fHp8/r1+v12st1hp9icxeWPv+JxrtuGud+t0Oqhy+i21eze6/bQ5PPA2++v0uvh7vfX6PTLIR9MAAAFJUlEQVR4nO2c7ZaqIBSGIfzIpDQ17UPr/u/y4JkzFTt1jFCZs97n59hSH2HD3uDIGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPiFpLfVJe08clu5xNVUcFdk3Cs2rwfCKpPCGSTfn0IjwU0mOOcyrhJ6pBLtEXcQ0clEMAy+NAQPLvqR1C0/hYhvJoaPE3hHLRrr7XIufaxNDOXTCQ7PwdzI3gsthTAyfO6LQlaPZjy714afG3K+ja/3AStzLxAtGHKxPX4PqrW39AzxjVVDdZrD7l9Xrct94AL7yK6hmneO/tfB9Oo7QLLJLBsq9rVZ+jANfmzfUHjFS4qzHFdLhiRHyxrrd2qKJcOo2WsToErjuguO+bFleAtz0lW5Uab7GeG1aq5kELBlqOqn3YE4lsY1mRmhX26lFJXeeywasiT3tGgUWT1nV01O/O/lRaO1ok1DNcsHJBoLk4rFiPBW3m/Gfz5g15D5eaQ1o4xP8zRjUj0SYVk/H7FsyMKaDqrFZfAUdriUT09WalOVbUPVjGtOonE9dTOGuVbJTNuG7R8ve336j4Jpo3Fz0J+pN2Uc/uNIUpyomjBTLSJSpZ4mHEvv3NPd744T+91n+JidR9ZLPBL3ExkyRudG2UwRjclR76D8NemfzJBtAr33bIOzbcdwd9CXg8S+fvnRdIYsrfS1GsGPdrvqlY7aUd5RtU1oqAbVUg8RsV9ZHHFW+szLZUcDsmkNVZg0JBq9rqdsxHVNT73uTvSnNVTlTEAWTg+dD/rtC59oIRP07IBNbaiisabBUhpciJCQOVBEVe8oNrmhuh3ajN7Aj0dRe/oJZTZQic5g+HJHQhSfzBspeWJqjB76+SyGzC8j7aZkvDMdVNOdIB30MJz1zmPYjgx06jobXE89q4IkafFPq3ozGTJ2K/QRR8YGSxzJKSYPqvjxQc1mqJox1h6/isZ3i6pNScblMSsI8xl2NOPhrbcHaBbIxc8NyOY1ZOnqoDfjiE52h2byIlqN6uazGrYLjlwnHrtufNSTNL4tR+Z/MxuqipVU5Lwc0xI+TdK8zdgOPrshYyQahfhxMy6sSJ3L30gZFjBkdabf7jZIhxzD257MgW9l70sYvi7/R6f+oHpZnXyzAlvEsF03JnFV3nqacWSd288yhm3LkLE/e301rv0ZiUDp5e9uaC1lyNJLSXpq+br8vwrIHF++n7EvZtgmmZI0Y67f/ku4eo3BGsiChiz0SabK4+cuSHdc5aEvVgdZ0rBNNUkzRo9ilu6abwfr3H6WNVTXpw0Vf2WqtSRzvGe6SLe0IUvXZIkjalKWFnRpJzc9//KGjF0C0h+LmiyWR59sljtgqKKR7uLoxp/tlLtgqIbNkqbWD79P33Zww7BdgOl+bVp49Yf7AI4YMnYuugS35cfbVc4Yqmyc1sZc2njlyB1D1VX1OlBsrbzE6ZKhmuefBWM7L+K4ZciS7wU1NQda2ml0zJCxJubtC/bv1rn9OGfIznkQBLm9HX/3DFmYJDZfE3fQ0DIwHAaGLgDDYWDoAjAcBoYuAMNhYOgCMBwGhi4Aw2Fg6AIwHAaGLgDDYWDoAjAcBoYuAMNhYOgCMBwGhi7w/xva+l5bdVn6Q8E97E6eHUMv81yF2zH8BcAQhu7z/xuafQs6/j2KItsZGLJV5t5XrbsRPDf7jMMqiBz6fH4/svu//8bg75bOWsZh9F9hAAAAAAAAAAAAAAAAAAAAALzHH00wZfrSdJ4CAAAAAElFTkSuQmCC">
+                        </a>
+                    </address>
                 </div>
             </div>
         </div>
