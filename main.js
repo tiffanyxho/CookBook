@@ -25,12 +25,25 @@ document.getElementById("home-btn").addEventListener("click", function goHomePg(
 // Navbar's Simple Recipe clicked --> shows simple recipe options
 document.getElementById("navbar-simple-recipes").addEventListener("click", function e(){
     document.getElementsByClassName("navbar-default")[0].style.display = "none";
-    document.getElementsByClassName("navbar-recipes")[0].style.display = "initial";
+    document.getElementById("navbar-recipes").style.display = "initial";
+});
+
+// Display breakfast recipes
+document.getElementById("navbar-breakfast").addEventListener("click", function e(){
+    let content = document.getElementsByClassName("content");
+    
+    for (let i=0; i<content.length; i++){
+        content[i].style.display = "none";
+    }
+
+    document.getElementById("recipes").style.display = "initial";
+    document.getElementById("breakfast").style.display = "initial";
+    document.getElementById("hardboiled-egg").style.display = "initial";
 });
 
 // Navbar: in Simple Recipes options, click Back --> display default navbar options
 document.getElementById("recipes-to-home").addEventListener("click", function e (){
-    document.getElementsByClassName("navbar-recipes")[0].style.display = "none";
+    document.getElementById("navbar-recipes").style.display = "none";
     document.getElementsByClassName("navbar-default")[0].style.display = "initial";    
 });
 
@@ -44,6 +57,7 @@ document.getElementById("navbar-about-site").addEventListener("click", function 
     document.getElementById("about-site-text").style.display = "initial";
 });
 
+// When About Creator clicked, display text about creator
 document.getElementById("navbar-about-creator").addEventListener("click", function display(){
     let content = document.getElementsByClassName("content");
 
