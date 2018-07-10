@@ -23,26 +23,30 @@
             <!-- Vertical navbar -->
             <div class="col-2">
                 <div class="navbar navbar-expand-lg">
-                    <!-- Default navbar, shown when user is first on site -->
-                    <ul class="navbar-default">
+                    <div>
                         <!-- Home Button: If user clicks on home, user will be brought back to homepage -->
                         <div class="home">
                             <button id="home-btn">Home Btn</button>
                         </div>
-                        <li><a href="#" id="navbar-about-site">About Less Than 30</a></li>
-                        <li><a href="#" id="navbar-about-creator">About Creator</a></li>
-                        <li><a href="#" id="navbar-simple-recipes">Simple Recipes</a></li>
-                        <li><a href="#">Suggestions</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <!-- Navbar shown when user clicks on simple recipes -->
-                    <ul class="no-show" id="navbar-recipes">
-                        <li><a href="#" id="navbar-breakfast">Breakfast</a></li>
-                        <li><a href="#">Lunch</a></li>
-                        <li><a href="#">Dinner</a></li>
-                        <li><a href="#">Snacks, Drinks, &amp; Soups</a></li>
-                        <li><a href="#" class="to-default-navbar" id="recipes-to-home">Back</a></li>
-                    </ul>
+                        <!-- Default navbar, shown when user is first on site -->
+                        <div id="navbar-default">
+                            <ul class="navbar-default">
+                                <li><a href="#" id="navbar-about-site">About Less Than 30</a></li>
+                                <li><a href="#" id="navbar-about-creator">About Creator</a></li>
+                                <li><a href="#" id="navbar-simple-recipes">Simple Recipes</a></li>
+                                <li><a href="#">Suggestions</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- Navbar shown when user clicks on simple recipes -->
+                        <ul class="no-show" id="navbar-recipes">
+                            <li><a href="#" id="navbar-breakfast">Breakfast</a></li>
+                            <li><a href="#">Lunch</a></li>
+                            <li><a href="#">Dinner</a></li>
+                            <li><a href="#">Snacks, Drinks, &amp; Soups</a></li>
+                            <li><a href="#" class="to-default-navbar" id="recipes-to-home">Back</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

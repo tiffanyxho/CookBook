@@ -32,6 +32,7 @@ document.getElementById("navbar-simple-recipes").addEventListener("click", funct
 
     document.getElementById("recipes").style.display = "initial";
     document.getElementsByClassName("navbar-default")[0].style.display = "none";
+    //document.getElementById("navbar-default").style.display = "none";
     document.getElementById("navbar-recipes").style.display = "initial";
     document.getElementById("recipes").getElementsByTagName("h2")[0].style.display = "initial";
 });
