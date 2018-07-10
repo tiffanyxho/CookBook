@@ -15,15 +15,22 @@ function handler() {
 document.getElementById("home-btn").addEventListener("click", function goHomePg(){
     let content = document.getElementsByClassName("content");
     
-        for (let i=0; i<content.length; i++){
-            content[i].style.display = "none";
-        }
-        
-        document.getElementsByClassName("home-imgs")[0].style.display = "block";
+    for (let i=0; i<content.length; i++){
+        content[i].style.display = "none";
+    }
+    
+    document.getElementsByClassName("home-imgs")[0].style.display = "block";
 });
 
 // Navbar's Simple Recipe clicked --> shows simple recipe options
 document.getElementById("navbar-simple-recipes").addEventListener("click", function e(){
+    let content = document.getElementsByClassName("content");
+    
+    for (let i=0; i<content.length; i++){
+        content[i].style.display = "none";
+    }
+
+    document.getElementById("recipes").style.display = "initial";
     document.getElementsByClassName("navbar-default")[0].style.display = "none";
     document.getElementById("navbar-recipes").style.display = "initial";
 });
@@ -41,10 +48,17 @@ document.getElementById("navbar-breakfast").addEventListener("click", function e
     document.getElementById("hardboiled-egg").style.display = "initial";
 });
 
-// Navbar: in Simple Recipes options, click Back --> display default navbar options
+// Navbar: in Simple Recipes options, click Back --> display default navbar options & dumpling img
 document.getElementById("recipes-to-home").addEventListener("click", function e (){
+    let content = document.getElementsByClassName("content");
+    
+    for (let i=0; i<content.length; i++){
+        content[i].style.display = "none";
+    }
+
+    document.getElementsByClassName("home-imgs")[0].style.display = "block";
     document.getElementById("navbar-recipes").style.display = "none";
-    document.getElementsByClassName("navbar-default")[0].style.display = "initial";    
+    document.getElementsByClassName("navbar-default")[0].style.display = "initial";
 });
 
 // if About Less Than 30 is clicked in navbar, then remove previously displayed content & content of about less than 30 will be displayed
