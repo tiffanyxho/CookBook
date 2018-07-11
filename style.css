@@ -8,11 +8,31 @@
     margin-bottom: 10%;
     background-color: pink;
     border: none;
+    font-family: 'Rancho', cursive;
+    font-size: 28px;
+}
+
+/* Make blue outline on home button not appear when home btn clicked */
+#home-btn:focus {
+    outline:0;
 }
 
 /* Added margin to top of pg so there's some empty space at top */
 #first-row{
     margin-top: 3.5%;
+}
+
+/* TRY: cooking instructions: Loved by the King */
+
+/* Change h1s font-family */
+body h1{
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Change font-family of p tags*/
+body p{
+    font-family: 'Delius Swash Caps', cursive;
+    font-size: 24px;
 }
 
 /* Align Github, LinkedIn, & Mail images to bottom center of page at all times */
@@ -67,6 +87,7 @@
     text-align: center;
 }
 
+/* Contact Me text displays in line with GitHub, LinkedIn, & Mail images */
 .img-container p{
     display: inline-block;
 }
